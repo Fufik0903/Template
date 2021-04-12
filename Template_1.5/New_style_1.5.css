@@ -3,18 +3,15 @@
     padding: 0;
 }
 @font-face {
-    font-family: 'TT Lakes';
-    src: url('../fonts/TTLakes-Medium.eot');
-    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
-    url('../fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/TTLakes-Medium.woff') format('woff'),
-    url('../fonts/TTLakes-Medium.ttf') format('truetype');
-    font-weight: 500;
+    font-family: 'TTLakes';
+    src: url("../fonts/TTLakes-Regular.eot");
+    src: local(":relaxed:"), url("../fonts/TTLakes-Regular.woff") format("woff"), url("../fonts/TTLakes-Regular.ttf") format("truetype"), url("../fonts/TTLakes-Regular.svg") format("svg");
+    font-weight: normal;
     font-style: normal;
 }
 body {
     background-color: #ffffff;
-    font-family: 'TT Lakes';
+    font-family: 'TTLakes';
     height: 100vh;
 }
 .general{
@@ -64,6 +61,7 @@ body {
     padding-left: 24px;
     margin-left: 8px;
     background: url("img/iconread-more.png") no-repeat center left;
+    transform: rotate(30deg);
 }
 .read-more:checked ~ .read-more-trigger::after{
     content: 'Показать все';
@@ -146,6 +144,9 @@ body {
         width: 224px;
         height: 72px;
         margin-right: 24px;
+    }
+    .read-more{
+        position: relative;
     }
     .read-more:checked ~ .element{
         display: none;
