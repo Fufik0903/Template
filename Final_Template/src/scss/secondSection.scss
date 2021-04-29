@@ -1,0 +1,68 @@
+@import 'colors';
+@import 'font';
+
+.secondSection__title{
+  height: 56px;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #F8F8F8 50%, #ffffff);
+  padding: 16px 0 16px 32px;
+  @include supportSectionFont;
+  color:$fontColor;
+  border-top: $borderTitle;
+}
+.secondSection__element{
+  height: 72px;
+  margin-bottom: 16px;
+}
+.elements{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) and(max-width: 1439px) {
+  .secondSection__content{
+    padding: 24px 0 24px 24px;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  .secondSection__element{
+    width: 224px;
+    margin-right: 18px;
+  }
+  .secondSection__container{
+    margin: 0 auto;
+  }
+  .secondSection__read-more:checked ~.secondSection__elements >.element6 ~ .element{
+    display: none;
+  }
+  .secondSection__slider{
+    display: none;
+  }
+}
+@media (min-width: 1440px){
+  .secondSection__content{
+    padding: 24px 0 50px 32px;
+  }
+  .secondSection__element{
+    width: 240px;
+    margin-right: 32px;
+  }
+  .secondSection__read-more:checked ~ .secondSection__elements > .element8 ~ .element{
+    display: none;
+  }
+  .secondSection__slider{
+    display: none;
+  }
+}
+.secondSection__read-more{
+  display: none;
+}
+.secondSection__read-more ~.secondSection__read-more-trigger::after {
+  @include readMore;
+  position: relative;
+}
+.secondSection__read-more:checked ~.secondSection__read-more-trigger::after {
+  @include readLess;
+}
+
+

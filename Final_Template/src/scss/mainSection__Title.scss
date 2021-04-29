@@ -1,0 +1,48 @@
+@import 'colors';
+@import "buttons";
+
+@media (min-width: 320px)and(max-width: 767px){
+  .hide{
+    display: none;
+  }
+  .mainSection__Title{
+    display: none;
+  }
+}
+@media (min-width: 768px) and(max-width: 1439px) {
+  .hide{
+    display: none;
+  }
+  .mainSection__Title{
+    display: none;
+  }
+}
+@media (min-width: 1440px){
+  .mainSection__Title{
+    display: flex;
+    justify-content: space-between;
+    padding: 42px 0 10px 1px;
+  }
+  .mainSection__text{
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6;
+    font-weight: bold;
+    flex-grow: 1;
+    border-left: 4px solid $leftBorder;
+    padding-left: 30px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  .mainSection__task,.mainSection__status{
+    display: flex;
+    align-items: center;
+  }
+  .mainSection__btn{
+    margin-right: 32px;
+    margin-left: 9px;
+  }
+  .hidebtn{
+    display: none;
+  }
+}
