@@ -798,7 +798,23 @@
   position: fixed;
   top: 0;
   right: 0;
-  box-shadow: 10px 10px 25px 3px black; }
+  box-shadow: 10px 10px 25px 3px black;
+  -webkit-animation-name: popUpApparition;
+          animation-name: popUpApparition;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s; }
+
+@-webkit-keyframes popUpApparition {
+  0% {
+    transform: translateX(320px); }
+  100% {
+    transform: translateY(0); } }
+
+@keyframes popUpApparition {
+  0% {
+    transform: translateX(320px); }
+  100% {
+    transform: translateY(0); } }
 
 .callBackSection__title, .callSection__title {
   font-size: 24px;

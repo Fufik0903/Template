@@ -1045,8 +1045,18 @@
   top: 0;
   right: 0;
   box-shadow: 10px 10px 25px 3px black;
+  animation-name: popUpApparition;
+  animation-duration: 1s;
 }
 
+@keyframes popUpApparition {
+  0% {
+    transform: translateX(320px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .callBackSection__title, .callSection__title {
   font-size: 24px;
   line-height: 32px;
