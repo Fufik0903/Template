@@ -1,4 +1,18 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'TTLakes';
+  src: url("fonts/TTLakes-Regular.eot");
+  src: local(":relaxed:"), url("fonts/TTLakes-Regular.woff") format("woff"),
+  url("fonts/TTLakes-Regular.ttf") format("truetype");
+  src: url("fonts/TTLakes-Bold.eot");
+  src: local(":relaxed:"), url("fonts/TTLakes-Bold.woff") format("woff"),
+  url("fonts/TTLakes-Bold.ttf") format("truetype");
+  src: url("fonts/TTLakes-Medium.eot");
+  src: local(":relaxed:"), url("fonts/TTLakes-Medium.woff") format("woff"),
+  url("fonts/TTLakes-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 .mainSection__header {
   display: flex;
   justify-content: space-between;
