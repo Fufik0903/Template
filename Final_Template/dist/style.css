@@ -128,7 +128,7 @@
   color: #7E7E82;
   padding-left: 0px; }
 
-.subSection__content p:hover::before {
+.subSection__content a:hover::before {
   content: '';
   background-color: #41F6D7;
   border-top-right-radius: 4px;
