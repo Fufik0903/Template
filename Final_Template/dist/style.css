@@ -114,7 +114,7 @@
   line-height: 24px;
   letter-spacing: -0.2px; }
 
-.subSection__content p {
+.subSection__content a {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
@@ -124,7 +124,7 @@
   vertical-align: top;
   padding-left: 20px; }
 
-.subSection__content p:hover {
+.subSection__content a:hover {
   color: #7E7E82;
   padding-left: 0px; }
 
